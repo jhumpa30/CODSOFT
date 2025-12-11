@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    background: #f9f1f4; 
+    color: #444;
+    font-size: 15px;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #e48ca5, #b56576); 
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.hero h1 span {
+    color: #ffe6ee;
+}
+
+.tagline {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.subtext {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.8;
+    color: #f8eaea;
+}
+
+.hero-nav a {
+    display: inline-block;
+    margin: 0.4rem 0.6rem;
+    padding: 0.6rem 1.3rem;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.hero-nav a:hover {
+    background: white;
+    color: #8b3a4f;
+}
+
+
+.about p, .projects p, .contact p{
+    font-size: 0.98rem;
+    color: #444;
+}
+
+
+header{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* GLOBAL HEADINGS & TEXT */
+h1, h2, h3{
+    font-family: 'Playfair Display' ,serif;
+    letter-spacing: 1px;
+}
+
+p, li{
+    font-weight: 300;
+}
+
+header h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+header p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 5px 0;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* NAV */
+nav{
+    margin-top: 1rem;
+}
+
+nav a{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-decoration: wavy;
+    margin: 0 15px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+nav a:hover{
+    color: #ffe6ee;
+}
+
+/* SECTIONS */
+section {
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.8rem;
+    color: #8b3a4f;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #b56576;
+    margin: 0.6rem auto 0;
+    border-radius: 999px;
+}
+
+/* ABOUT SECTION */
+.about-content{
+    display: flex;
+    align-items:center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+.about-content p{
+    max-width: 560px;
+    line-height: 1.9;
+    color:#444;
+    text-align: justify;
+}
+.about img {
+    width: 230px;
+    border-radius: 16px;
+    border: 2px solid #b56576;
+    padding: 6px;
+    background: #f9f1f4;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    flex-shrink: 0;
+}
+
+/* SKILLS */
+.skills-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 1.5rem;
+}
+.skill-pill {
+    background: #e8b7c8; 
+    margin: 0.5rem;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #5a1e36;
+    letter-spacing: 0.4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.skill-pill:hover{
+    background: #d98aa8;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* PROJECTS */
+.projects-grid {
+    display: grid;
+    flex-direction: column;
+    gap:2.5rem;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.project-inner{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+.project-text{
+    flex: 1;
+    text-align: left;
+}
+
+project-text h3{
+    margin-bottom: 0.6rem;
+}
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+.project-card h3{
+    font-family: 'Playfair Display' ,serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+}
+
+.project-images {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-left: auto;
+  
+}
+
+.project-images img {
+  width: 220px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.05);
+}
+.food-images{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.food-images img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.food-images img:hover{
+    transform: scale(1.1);
+}
+
+/*RESUME*/
+.resume {
+  text-align: center;
+}
+
+.resume-row {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap; 
+}
+
+.resume-row p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Button Style */
+.resume a {
+  display: inline-block;
+  background: #b56576;
+  color: white;
+  padding: 0.7rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: background 0.3s ease;
+}
+
+.resume a:hover {
+  background: #8b3a4f;
+}
+
+/* CONTACT */
+.contact p {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+/* FOOTER */
+footer {
+    background: #3a1f2b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #f3c3d3;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+    .about-content p {
+        max-width:100% ;
+    }
+    .project-inner{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .project-images{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-left: 0;
+        justify-content: center;
+    }
+    .project-images img{
+        width: 140px;
+    }
+}
